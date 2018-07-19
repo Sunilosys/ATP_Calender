@@ -1,0 +1,40 @@
+{
+  "deploy_settings": {
+    "default": {
+      "skill_id": "amzn1.ask.skill.a60a50ff-5036-46d2-a433-3ad1f4f3c37e",
+      "was_cloned": true,
+      "resources": {
+        "manifest": {
+          "eTag": "b7bed50af314b56455cdc526d33c07c4"
+        },
+        "interactionModel": {
+          "en-US": {
+            "eTag": "c341fda26bb1cfcbc03388533b29d824"
+          }
+        },
+        "lambda": [
+          {
+            "arn": "arn:aws:lambda:us-east-1:471325060569:function:ATPCalendar",
+            "awsRegion": "us-east-1",
+            "functionName": "ATPCalendar",
+            "alexaUsage": [
+              "custom/default"
+            ],
+            "revisionId": "8b774424-20c7-4158-82c7-61d23e9f79e5"
+          }
+        ]
+      },
+      "merge": {
+        "manifest": {
+          "apis": {
+            "custom": {
+              "endpoint": {
+                "uri": "arn:aws:lambda:us-east-1:471325060569:function:ATPCalendar"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
